@@ -21,12 +21,17 @@ npm run build
 npm run build --report
 ```
 
-## Testing
+## How to Use
 
-```bash
-# run unit tests
-npm run unit
+- Clone and go through `Build Setup`
+- Once you have the serve and client both running navigate to the `/upload` route. Start adding tracks
+- Navigate back to `/` and you can start listening to the tracks from YouTube
+- Tracks are played in a random order on refresh and can be skipped around.
 
-# run all tests
-npm test
-```
+## Things to Add
+
+- Custom Authentication branding
+- Fully Responsive Upload Manager
+- Possible genre identifier to make sure all uploads are from a "Vaporwave" specific genre
+- Better Validation
+- Unit Testing
