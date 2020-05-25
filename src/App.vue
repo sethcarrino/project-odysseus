@@ -41,6 +41,7 @@ export default {
       await this.$auth.logout();
       await this.refreshActiveUser();
       this.$router.push("/");
+      window.location.reload(true);
     }
   }
 };
