@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="md">
+  <b-navbar toggleable="md" type="dark" variant="dark">
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-navbar-brand class="navbar-brand" to="/"
       >Project Odysseus</b-navbar-brand
@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .navbar {
-  background-color: #ff6ad5;
+  background-color: #202020 !important;
   z-index: 999;
   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.57);
   -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.57);
@@ -43,7 +43,7 @@ export default {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 18px;
-  color: #fff !important;
+  color: #ff6ad5 !important;
 }
 
 .navbar-wrapper {
@@ -76,11 +76,21 @@ ion-icon {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
+    padding-left: 10px;
   }
 
   .nav-link p {
     margin: 0;
     display: block;
+    font-size: 14px;
+  }
+
+  .navbar-toggler {
+    border-color: transparent !important;
+  }
+
+  ion-icon {
+    font-size: 18px;
   }
 }
 </style>
