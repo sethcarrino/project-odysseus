@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Hello from "@/components/Hello";
-import PostsManager from "@/components/PostsManager";
+import MusicPlayer from "@/components/views/MusicPlayer";
+import UploadManager from "@/components/views/UploadManager";
 import Auth from "@okta/okta-vue";
 
 Vue.use(Auth, {
@@ -18,17 +18,17 @@ let router = new Router({
   routes: [
     {
       path: "/",
-      name: "Hello",
-      component: Hello
+      name: "MusicPlayer",
+      component: MusicPlayer
     },
     {
       path: "/implicit/callback",
       component: Auth.handleCallback()
     },
     {
-      path: "/posts-manager",
-      name: "PostsManager",
-      component: PostsManager,
+      path: "/upload",
+      name: "UploadManager",
+      component: UploadManager,
       meta: {
         requiresAuth: true
       }

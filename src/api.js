@@ -21,19 +21,19 @@ export default {
       return req.data;
     });
   },
-  getPosts() {
-    return this.execute("get", "/posts");
+  getUploads() {
+    return this.execute("get", "/uploads");
   },
-  getPost(id) {
-    return this.execute("get", `/posts/${id}`);
+  getUpload(id) {
+    return this.execute("get", `/uploads/${id}`);
   },
-  createPost(data) {
-    return this.execute("post", "/posts", data);
+  createUpload(data) {
+    return this.execute("post", "/uploads", data);
   },
-  updatePost(id, data) {
-    return this.execute("put", `/posts/${id}`, data);
+  updateUpload(id, data) {
+    return this.execute("put", `/uploads/${id}`, data);
   },
-  deletePost(id) {
-    return this.execute("delete", `/posts/${id}`);
+  deleteUpload(id) {
+    return this.execute("delete", `/uploads/${id}`);
   }
 };

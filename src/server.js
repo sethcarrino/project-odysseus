@@ -36,12 +36,13 @@ app.use((req, res, next) => {
 
 let database = new Sequelize({
   dialect: "sqlite",
-  storage: "./test.sqlite"
+  storage: "./project-odysseus.sqlite"
 });
 
-let Post = database.define("posts", {
+let Upload = database.define("uploads", {
+  artist: Sequelize.STRING,
   title: Sequelize.STRING,
-  body: Sequelize.TEXT
+  src: Sequelize.STRING
 });
 
 finale.initialize({
@@ -50,8 +51,8 @@ finale.initialize({
 });
 
 let userResource = finale.resource({
-  model: Post,
-  endpoints: ["/posts", "/posts/:id"]
+  model: Upload,
+  endpoints: ["/uploads", "/uploads/:id"]
 });
 
 // Resets the database and launches the express app on :8081
