@@ -24,6 +24,9 @@ npm run build --report
 ## How to Use
 
 - Clone and go through `Build Setup`
+- Login with:
+  - username: `sethcarrino+flywheel@gmail.com`
+  - password: `Testing123!`
 - Once you have the serve and client both running navigate to the `/upload` route. Start adding tracks
 - Navigate back to `/` and you can start listening to the tracks from YouTube
 - Tracks are played in a random order on refresh and can be skipped around.
