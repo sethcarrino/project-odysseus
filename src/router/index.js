@@ -19,7 +19,10 @@ let router = new Router({
     {
       path: "/",
       name: "MusicPlayer",
-      component: MusicPlayer
+      component: MusicPlayer,
+      meta: {
+        requiresAuth: true
+      }
     },
     {
       path: "/implicit/callback",

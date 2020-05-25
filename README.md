@@ -35,3 +35,6 @@ npm run build --report
 - Possible genre identifier to make sure all uploads are from a "Vaporwave" specific genre
 - Better Validation
 - Unit Testing
+- Music Player volume slider
+- Custom Favicon
+- User can have many uploads
