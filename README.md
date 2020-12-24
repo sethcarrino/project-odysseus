@@ -44,3 +44,4 @@ npm run test
 - Music Player volume slider
 - Custom Favicon
 - User can have many uploads
+- Persistant database for storing user uploads
