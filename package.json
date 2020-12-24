@@ -10,8 +10,7 @@
     "dev": "node build/dev-server.js",
     "server": "node ./src/server",
     "start": "node build/dev-server.js",
-    "test": "npm run unit",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"
+    "cypress": "npx cypress open"
   },
   "dependencies": {
     "@okta/jwt-verifier": "0.0.11",
@@ -46,6 +45,7 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "cssnano": "^3.10.0",
+    "cypress": "^3.8.3",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.0",
