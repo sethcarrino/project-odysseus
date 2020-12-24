@@ -37,7 +37,6 @@ npm run build --report
 - Custom Authentication branding
 - Fully Responsive Upload Manager
 - Possible genre identifier to make sure all uploads are from a "Vaporwave" specific genre
-- Better Validation
 - Unit Testing
 - Music Player volume slider
 - Custom Favicon
