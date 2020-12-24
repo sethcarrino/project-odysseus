@@ -1,16 +1,17 @@
 {
   "name": "project-odysseus",
   "version": "1.0.0",
+  "private": true,
   "description": "A Vaporwave vue.js project",
   "author": "Seth Carrino",
-  "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
+    "test:e2e": "vue-cli-service test:e2e",
+    "dev": "node build/dev-server.js",
+    "server": "node ./src/server",
+    "start": "node build/dev-server.js",
     "test": "npm run unit",
-    "server": "node ./src/server"
+    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"
   },
   "dependencies": {
     "@okta/jwt-verifier": "0.0.11",
@@ -29,6 +30,7 @@
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
     "autoprefixer": "^7.1.5",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -83,13 +85,13 @@
     "webpack-hot-middleware": "^2.19.1",
     "webpack-merge": "^4.1.0"
   },
-  "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
 }
