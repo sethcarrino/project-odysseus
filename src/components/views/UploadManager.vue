@@ -123,9 +123,15 @@ export default {
         } else {
           await api.createUpload(this.form);
         }
-        this.form = {}; // reset form
+        // reset form
+        this.form = {
+          artist: '',
+          title: '',
+          src: ''
+        }; 
         await this.refreshUploads();
         this.submitStatus = 'PENDING'
+        setTimeout(() => { this.$v.$reset() }, 0)
         setTimeout(() => {
           this.submitStatus = 'OK'
         }, 500)
